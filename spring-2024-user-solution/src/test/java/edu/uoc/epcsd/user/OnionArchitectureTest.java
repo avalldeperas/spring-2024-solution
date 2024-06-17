@@ -30,7 +30,7 @@ class OnionArchitectureTest {
                 // contains services that use the entities in the domainModel packages.
                 .domainServices("..domain.service..")
                 // packages contain services and configuration to run the application and use cases
-                .applicationServices("..")
+                .applicationServices("..application..")
                 // package contains logic to connect to external systems and/or infrastructure
                 .adapter("persistence", "..infrastructure.repository..")
                 .adapter("rest", "..application.rest..")
