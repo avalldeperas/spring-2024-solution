@@ -2,7 +2,6 @@ package edu.uoc.epcsd.productcatalog;
 
 import edu.uoc.epcsd.productcatalog.domain.Offer;
 import edu.uoc.epcsd.productcatalog.domain.repository.OfferRepository;
-import edu.uoc.epcsd.productcatalog.infrastructure.repository.jpa.OfferRepositoryImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
