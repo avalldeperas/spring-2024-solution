@@ -1,6 +1,7 @@
-package edu.uoc.epcsd.productcatalog.infrastructure.repository.jpa;
+package edu.uoc.epcsd.productcatalog;
 
 import edu.uoc.epcsd.productcatalog.domain.Offer;
+import edu.uoc.epcsd.productcatalog.infrastructure.repository.jpa.OfferRepositoryImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -27,7 +28,7 @@ class OfferRepositoryIntegrationTest {
         assertTrue(userOffers.contains(newOffer));
     }
 
-    private static Offer buildOffer() {
+    private Offer buildOffer() {
         return Offer.builder()
                 .id(1L)
                 .categoryId(1L)
