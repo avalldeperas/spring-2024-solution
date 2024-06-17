@@ -8,7 +8,7 @@ class OfferUnitTest {
 
     @Test
     void whenNewOfferCreated_thenStatusIsPending() {
-        Offer offer = new Offer();
+        Offer offer = Offer.builder().build();
         assertEquals(OfferStatus.PENDING, offer.getStatus());
     }
 }
