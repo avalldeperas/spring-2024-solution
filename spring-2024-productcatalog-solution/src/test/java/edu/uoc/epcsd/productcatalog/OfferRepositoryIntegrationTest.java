@@ -1,6 +1,7 @@
 package edu.uoc.epcsd.productcatalog;
 
 import edu.uoc.epcsd.productcatalog.domain.Offer;
+import edu.uoc.epcsd.productcatalog.domain.repository.OfferRepository;
 import edu.uoc.epcsd.productcatalog.infrastructure.repository.jpa.OfferRepositoryImpl;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 class OfferRepositoryIntegrationTest {
 
     @Autowired
-    private OfferRepositoryImpl offerRepository;
+    private OfferRepository offerRepository;
 
     private static final String USER_EMAIL = "email@email.com";
 
